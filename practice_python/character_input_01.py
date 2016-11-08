@@ -15,4 +15,4 @@ user_birthday = current_year - age
 year = str(user_birthday + 100)
 
 
-print(name + " will be 100 years old in the year of " + year)
+print("{} will be 100 years old in the year of {}.".format(name, year))
