@@ -12,6 +12,7 @@ Extras:
 """
 
 user_num = int(input('Enter a number: '))
+user_check = int(input('Enter a number to divide by: '))
 
 if user_num % 4 == 0:
     print('The number is multiple of 4.')
@@ -19,3 +20,8 @@ elif user_num % 2 == 0:
     print('The number is even.')
 else:
     print('The number is odd.')
+
+if user_num % user_check == 0:
+    print('{} divides evenly by {}'.format(user_num, user_check))
+else:
+    print('{} does not dived evenly by {}'.format(user_num, user_check))
