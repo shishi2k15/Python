@@ -15,3 +15,14 @@ Take a list, say for example this one:
           elements from the original list a that are smaller than that number
           given by the user.
 """
+
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = []
+
+user_num = int(raw_input('Enter a number: '))
+
+for num in a:
+    if num < user_num:
+        b.append(num)
+
+print b
