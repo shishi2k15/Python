@@ -27,5 +27,6 @@ for num in a_list:
 
 print(new_list)
 
+# Writing the same in one line
 my_list = [num for num in a_list if num < user_num]
 print(my_list)
