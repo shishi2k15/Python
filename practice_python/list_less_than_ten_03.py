@@ -16,13 +16,13 @@ Take a list, say for example this one:
           given by the user.
 """
 
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-b = []
+a_list = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+new_list = []
 
 user_num = int(raw_input('Enter a number: '))
 
-for num in a:
+for num in a_list:
     if num < user_num:
-        b.append(num)
+        new_list.append(num)
 
-print b
+print(new_list)
