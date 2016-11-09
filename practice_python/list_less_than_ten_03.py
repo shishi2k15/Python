@@ -26,3 +26,6 @@ for num in a_list:
         new_list.append(num)
 
 print(new_list)
+
+my_list = [num for num in a_list if num < user_num]
+print(my_list)
