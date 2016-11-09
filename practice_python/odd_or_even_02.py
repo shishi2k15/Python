@@ -10,3 +10,12 @@ Extras:
     number to divide by (check). If check divides evenly into num, tell that
     to the user. If not, print a different appropriate message.
 """
+
+user_num = int(input('Enter a number: '))
+
+if user_num % 4 == 0:
+    print('The number is multiple of 4.')
+elif user_num % 2 == 0:
+    print('The number is even.')
+else:
+    print('The number is odd.')
