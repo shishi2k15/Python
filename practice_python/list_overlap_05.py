@@ -22,7 +22,6 @@ a = range(0, random.randint(0, 21))
 b = range(0, random.randint(0, 21))
 
 new_list = []
-count = 0
 
 # for x in a:
 #    if x in b:
