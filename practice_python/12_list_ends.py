@@ -12,10 +12,7 @@ def list_ends(a_list):
     consisting only of the first and
     last elements of the list given
     '''
-    new_list = []
-    new_list.append(a_list[0])
-    new_list.append(a_list[-1])
-    return new_list
+    return [a_list[0], a_list[-1]]
 
 a = [5, 10, 15, 20, 25]
 
