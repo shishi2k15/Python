@@ -8,7 +8,7 @@ run-time code in a main method.
 import random
 
 
-def pass_gen(pass_len):
+def pass_gen(pass_len=8):
     """
     Generates random passowrd with given lenght.
     """
