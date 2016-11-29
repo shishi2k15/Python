@@ -6,15 +6,23 @@ code = ''.join(random.sample(num, 4))
 attempt = 10
 
 
-def compare_numbers(user_num, random_num):
+def compare_numbers(guess, code):
     """Compares the two numbers and counts the cows and bulls
     """
     cow_bulls = [0, 0]  # [0] is cows, [1] is bulls
-    for i in range(len(random_num)):
-        if random_num == user_num:
+    remaining_x = []
+    remaining_y = []
+    for x, y in zip(guess, code):
+        if x == y:
             cow_bulls[1] += 1
         else:
+            remaining_x.append(x)
+            remaining_y.append(y)
+    for x in remaining_x:
+        if x in remaining_y:
             cow_bulls[0] += 1
+            remaining_y.remove(x)
+
     return cow_bulls
 
 
